@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Club Social Links</title>
+  <title>Creative Space Club</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -12,12 +13,26 @@
       padding: 50px;
     }
 
+    .logo {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
     h1 {
+      margin-bottom: 10px;
+    }
+
+    .slogan {
+      font-size: 14px;
+      color: #666;
       margin-bottom: 40px;
     }
 
     .button {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       width: 250px;
       margin: 10px auto;
       padding: 15px 20px;
@@ -26,6 +41,10 @@
       color: white;
       border-radius: 8px;
       transition: background 0.3s;
+    }
+
+    .button i {
+      font-size: 18px;
     }
 
     .join { background: #4CAF50; }
@@ -45,12 +64,34 @@
   </style>
 </head>
 <body>
+
+  <!-- Club Logo -->
+  <img class="logo" src="your-logo.png" alt="Creative Space Club Logo" />
+
+  <!-- Header and Slogan -->
   <h1>Connect With Us</h1>
-  
-  <a class="button join" href="https://forms.gle/YOUR_FORM_LINK" target="_blank">Join the Club</a>
-  <a class="button email" href="mailto:yourclub@example.com">Email Us</a>
-  <a class="button facebook" href="https://www.facebook.com/YourPage" target="_blank">Facebook</a>
-  <a class="button instagram" href="https://www.instagram.com/YourProfile" target="_blank">Instagram</a>
-  <a class="button tiktok" href="https://www.tiktok.com/@YourProfile" target="_blank">TikTok</a>
+  <div class="slogan">Creative Space Club – Where ideas come alive</div>
+
+  <!-- Buttons -->
+  <a class="button join" href="https://forms.gle/YOUR_FORM_LINK" target="_blank">
+    <i class="fas fa-clipboard-list"></i> Join the Club
+  </a>
+
+  <a class="button email" href="mailto:yourclub@example.com">
+    <i class="fas fa-envelope"></i> Email Us
+  </a>
+
+  <a class="button facebook" href="https://www.facebook.com/YourPage" target="_blank">
+    <i class="fab fa-facebook-f"></i> Facebook
+  </a>
+
+  <a class="button instagram" href="https://www.instagram.com/YourProfile" target="_blank">
+    <i class="fab fa-instagram"></i> Instagram
+  </a>
+
+  <a class="button tiktok" href="https://www.tiktok.com/@YourProfile" target="_blank">
+    <i class="fab fa-tiktok"></i> TikTok
+  </a>
+
 </body>
 </html>
