@@ -1,0 +1,132 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%); 
+  padding: 50px 20px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideUp 1s ease-out 0.5s both;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+  animation: bounceIn 1s ease-out 0.8s both;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+  animation: fadeInUp 1s ease-out 1s both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slogan {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  font-weight: 300;
+  animation: fadeInUp 1s ease-out 1.2s both;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 280px;
+  margin: 10px auto;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: slideInLeft 0.8s ease-out both;
+}
+
+.button:nth-child(1) { animation-delay: 1.4s; }
+.button:nth-child(2) { animation-delay: 1.6s; }
+.button:nth-child(3) { animation-delay: 1.8s; }
+.button:nth-child(4) { animation-delay: 2s; }
+.button:nth-child(5) { animation-delay: 2.2s; }
+
+@keyframes slideInLeft {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.button i {
+  font-size: 18px;
+}
+
+.join { background: linear-gradient(45deg, #4CAF50, #66BB6A); }
+.join:hover { background: linear-gradient(45deg, #45a049, #5CB85C); }
+
+.email { background: linear-gradient(45deg, #555, #777); }
+.email:hover { background: linear-gradient(45deg, #333, #555); }
+
+.facebook { background: linear-gradient(45deg, #3b5998, #4C70BA); }
+.facebook:hover { background: linear-gradient(45deg, #2d4373, #3A5A99); }
+
+.instagram { background: linear-gradient(45deg, #E1306C, #F56040); }
+.instagram:hover { background: linear-gradient(45deg, #C13584, #E95950); }
+
+.tiktok { background: linear-gradient(45deg, #000000, #333333); }
+.tiktok:hover { background: linear-gradient(45deg, #1a1a1a, #4d4d4d); }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .button {
+    max-width: 100%;
+  }
+}
